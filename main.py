@@ -5,7 +5,7 @@ from types import MethodType
 from weatherCalculation import kelvin_to_celsius, kelvin_to_farenheit
 
 BASE_URL = "https://api.openweathermap.org/data/2.5/weather?"
-API_KEY = <ENTER-YOUR-API-KEY>
+API_KEY = <YOUR-API_KEY>
 
 app = Flask(__name__)
 
