@@ -1,16 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
      <head> 
        <meta charset = "utf-8">
        <title> Weather Application</title>
        <link rel="stylesheet" href= "{{url_for( 'static', filename='style.css')}}">
     </head>
   <body>
+    <div class="container">
+    <main>
     <h1>Your Weather Report is Below: </h1>
-    <--image generates based on temperature-->
+      <img src="https://scx1.b-cdn.net/csz/news/800a/2019/weatherforec.jpg" 
+        alt="Weather" width="500" height ="400">
     <h2>The current temperature in {{city}}:</h2>
-    <h3>Temperature in Celsius: {{celsius}}</h3>
-    <h3>Temperature in Farenheit: {{farenheit}}</h3>
+    <p>Temperature in Celsius: {{celsius}}</p>
+    <p>Temperature in Farenheit: {{farenheit}}</p>
+    </main>
+      </div>
   </body>
 
 </html>
