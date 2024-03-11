@@ -21,9 +21,11 @@ def weather():
   temp_kelvin = response['main']['temp']
   temp_celsius = kelvin_to_celsius(temp_kelvin)
   temp_farenheit = kelvin_to_farenheit(temp_celsius)
+  description = response['weather']['main']
+  print(response);
   return render_template('weatherReport.html', 
       city = city, 
-      celsius = round(temp_celsius, 2), farenheit = round(temp_farenheit, 2))
+      celsius = round(temp_celsius, 2), farenheit = round(temp_farenheit, 2), description = description)
 
 if __name__ == '__main__':
   app.run(host='0.0.0.0', port=80)
