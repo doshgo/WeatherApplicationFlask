@@ -1,0 +1,26 @@
+body {
+  background-color: skyblue;
+}
+.container {
+  background-color: white;
+  text-align: center;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px;
+}
+
+.button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+}
+
+a, a:visited {
+  color: black;
+}
+
+
+
+

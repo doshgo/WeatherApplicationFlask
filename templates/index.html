@@ -1,14 +1,20 @@
 <!DOCTYPE html>
-
-  <head> Weather Application</head>
+<html lang="en-US">
+  <head> 
+     <meta charset = "utf-8">
+     <title> Weather Application</title>
+     <link rel="stylesheet" href= "{{url_for( 'static', filename='style.css')}}">
+  </head>
   <body>
-    <h2>Enter in a city:</h2>
+    <div class="container">
+    <h1>Let's get the weather!</h1>
+    <img src="https://scx1.b-cdn.net/csz/news/800a/2019/weatherforec.jpg" 
+      alt="Weather" width="500" height ="400">
+    <p>Enter in a city:</p>
     <form action = "/clicked">
       <input type="text" id="cityID" name="city">
-      <br>
-      <br>
-      <input type="submit" value="Submit" >
+      <input type="submit" value="Submit" class="button" >
     </form>
-    <h1>{{CITY}}</h1>
+    </div>
   </body>
 </html>
