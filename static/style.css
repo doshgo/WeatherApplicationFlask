@@ -4,10 +4,10 @@ body {
 .container {
   background-color: white;
   text-align: center;
-  width: 60%;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 5px;
+  width: 30%;
+  margin: auto;
+  border-style: solid;
+  border-color: black;
 }
 
 .button {
@@ -19,6 +19,13 @@ body {
 
 a, a:visited {
   color: black;
+}
+
+footer {
+  text-align: center;
+  width: 60%;
+  margin: 10px auto ;
+  padding: 10px 0;
 }
 
 
